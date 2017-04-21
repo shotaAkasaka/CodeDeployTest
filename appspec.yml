@@ -4,6 +4,5 @@ files:
   - source: \
     destination: c:\inetpub\wwwroot
 hooks:
-  BeforeInstall:
-    - location: \before-install.bat
-      timeout: 900
+  AfterInstall:
+    - location: \Build\build.bat
